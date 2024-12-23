@@ -1,0 +1,50 @@
+---
+title: "Japan"
+
+toc: true
+toc-depth: 4
+toc-expand: 4
+
+format:
+  html:
+    python: /usr/bin/python3
+    filters:
+      - ../../../code/google_map_filter.py
+
+---
+
+::: {.callout-important title="Status -- DRAFT"}
+
+This guide is currently in development. It may contain partial or incomplete
+information.
+
+:::
+
+
+
+<img style="border: 1px solid gray; float: right; margin-left: 10px;"
+src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/320px-Flag_of_Japan.svg.png"
+/>
+
+Japan is an extremely safe country with amazing opportunties for bicycle touring
+at all levels. The locals are friendly, the roads are great, and the drivers are
+almost *too* conscientious. There are plenty of gravel and MTB trails if you
+want to get off the pavement. Free camping is everywhere. All of these
+factors make Japan a particularly good option for cyclists on their first
+international trips. Several bicycle tour operators are available if you don't
+want to do your own logistics, but this guide aims to make self-supported
+touring easy. ...And if things go sideways, there's always the train.
+
+<map search="Japan" width="100%" height="700px" style="background: gray" />
+
+{{< include _quickstart.qmd >}}
+{{< include _routes.qmd >}}
+{{< include _regions.qmd >}}
+{{< include _logistics.qmd >}}
+{{< include _misc.qmd >}}
+{{< include _appendix.qmd >}}
+
+# Contributors
+
+* @brianthelion -- It all started in 2008 with a big overland vehicle called BiRT
+  and a bunch of rock climbers. Then somehow bikes got involved.

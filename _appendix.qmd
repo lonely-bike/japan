@@ -1,0 +1,16 @@
+# Appendix
+
+## Sketchy tunnels
+
+The following tunnels are either impassible or dangerous to cyclists.
+
+| Name      | Route | Near     | Direction | Uphill | Shoulder | Construction | Catwalk | Traffic       | Bypass |
+|-----------|-------|----------|-----------|--------|----------|--------------|---------|---------------|---------
+| Gengan    | 46    | Morioka  | Tazawako  | N      | Y        | Y            |         |               | None   |
+|           |       | Tazawako | Morioka   | Y      | Y        | Y            |         |               | None   |
+| Nakasendo | 19    | Kiso     | Narai     | N      | N        | N            | Narrow  | Heavy, trucks | Close but extreme |
+|           |       | Narai    | Kiso      | N      | N        | N            | Narrow  | Heavy, trucks | Close but extreme |
+
+## Sketchy roads
+
+## Tour operators

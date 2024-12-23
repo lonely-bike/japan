@@ -1,0 +1,115 @@
+# Regions
+
+## Kyushu
+
+<map search="Kyushu, Japan" />
+
+### Highlights
+
+#### Cape Sata
+
+The Southern terminus of the Length of Japan ride is an exciting objective in
+its own right.
+
+#### Yamanami Highway
+
+<map id="yamanami-highway" search="Aso National Park, Kyushu, Japan" />
+<route target="" gpx="yamanami-highway" />
+<place target="yamanami-highway" url="https://maps.app.goo.gl/7RWMrFTc5obdqqF69" />
+
+
+#### Shimoshima Island
+
+### Prefectures
+
+#### Fukuoka
+
+#### Kumamoto
+
+#### Nagasaki
+
+#### Oita
+
+#### Saga
+
+#### Kagoshima
+
+Cyclists going for the full [LoJ](#length-of-japan) will fly either in or out at
+Kagoshima Airport, a 2-day ride from souther tip of Kyushu at Cape Sata.
+
+#### Miyazaki
+
+#### Okinawa
+
+## Shikoku
+
+<map search="Shikoku, Japan" />
+
+## Honshu
+
+### Chugoku
+
+* South and west, closest region to Kyushu.
+
+* Prefectures: Okayama, Hiroshima, Yamaguchi, Shimane, Tottori
+
+* Known for its historical sites like Hiroshima Peace Memorial Park and the
+  floating torii gate of Itsukushima Shrine.
+
+<map search="Chugoku, Honshu, Japan" />
+
+### Kansai
+
+* Central Honshu, south of Tokyo and Mount Fuji.
+
+* Prefectures: Osaka, Kyoto, Hyogo, Nara, Shiga, Wakayama, Mie
+
+* A historical and cultural heart of Japan, home to cities like Kyoto, Osaka,
+  and Nara.
+
+<map search="Kansai, Honshu, Japan" />
+
+### Chubu
+
+* Central mountainous region extending from roughly Lake Biwa in the south
+  through Niigata in the north, but excluding the Tokyo surroundings.
+
+* Prefectures: Niigata, Toyama, Ishikawa, Fukui, Yamanashi, Nagano, Gifu,
+  Shizuoka, Aichi
+
+* A diverse region with the Japanese Alps, Mount Fuji, and industrial hubs like
+  Nagoya.
+
+<map search="Chūbu, Honshu, Japan" />
+
+### Kanto
+
+* Areas surrounding Tokyo.
+
+* Prefectures: Tokyo, Kanagawa, Saitama, Chiba, Ibaraki, Tochigi, Gunma
+
+* A densely populated and urbanized region on the central Pacific coast, and the
+  economic and cultural hub.
+
+<map search="Kanto, Honshu, Japan" />
+
+### Tohoku
+
+* Everything north of Nikko.
+
+* Prefectures: Aomori, Iwate, Akita, Miyagi, Yamagata, Fukushima
+
+* Known for its rural charm, traditional festivals, and scenic landscapes,
+  including rugged coastlines and hot springs.
+
+<map search="Tohoku region, Japan" />
+
+## Hokkaido
+
+<map search="Hokkaido, Japan" />
+
+### Southern
+
+### Eastern
+
+### Western
