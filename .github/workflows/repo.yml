@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  branch-protection: read
+
 jobs:
   compliance-check:
     runs-on: ubuntu-latest
@@ -14,9 +17,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          sudo snap install yq
-          pip install --upgrade pip wheel
-          pip install dyff
+          sudo snap install yq dyff
 
       - name: Fetch Branch Protection Rules
         run: |
