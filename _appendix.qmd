@@ -2,7 +2,7 @@
 
 ## Sketchy tunnels
 
-The following tunnels are either impassible or dangerous to cyclists.
+The following tunnels are either impassable or dangerous to cyclists.
 
 | Name      | Route | Near     | Direction | Uphill | Shoulder | Construction | Catwalk | Traffic       | Bypass |
 |-----------|-------|----------|-----------|--------|----------|--------------|---------|---------------|---------
