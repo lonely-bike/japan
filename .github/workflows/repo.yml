@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Dependencies
-        run: pip install yaml-diff-tool yq
+        run: pip install dyff yq
 
       - name: Fetch Branch Protection Rules
         run: |
@@ -30,4 +30,4 @@ jobs:
 
       - name: Compare with Desired State
         run: |
-          yaml-diff .github/repo/compliance-settings.yml current_state.yml
+          dyff .github/repo/compliance-settings.yml current_state.yml
