@@ -6,7 +6,10 @@ on:
       - main
 
 permissions:
-  branch-protection: read
+  # Required for accessing branch protection settings
+  contents: read
+  pull-requests: read
+  repo: admin  # Full access to repository settings
 
 jobs:
   compliance-check:
