@@ -4,6 +4,10 @@ on:
   pull_request:
     paths:
       - '**/*.md'
+      - '**/*.qmd'
+  push:
+    branches:
+      - main
 
 jobs:
   markdown-check:
@@ -12,10 +16,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
+      # - name: Set up Python
+      #   uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.9'
 
       - name: Install dependencies
         run: |
@@ -28,4 +32,5 @@ jobs:
 
       - name: Run mdformat for line-wrapping
         run: |
+          find . -name '*.md' -exec mdformat {} --wrap=80 \;
           find . -name '*.qmd' -exec mdformat {} --wrap=80 \;
