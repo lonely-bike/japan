@@ -1,0 +1,31 @@
+name: Markdown Spellcheck and Formatting
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+
+jobs:
+  markdown-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip wheel
+          pip install codespell mdformat mdformat-frontmatter
+
+      - name: Run codespell for spell-checking
+        run: |
+          codespell --check-filenames
+
+      - name: Run mdformat for line-wrapping
+        run: |
+          find . -name '*.qmd' -exec mdformat {} --wrap=80 \;
