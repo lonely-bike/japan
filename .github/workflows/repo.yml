@@ -41,8 +41,8 @@ jobs:
         run: |
           dyff yaml branches.json > branches.yml
           echo "Converted JSON to YAML:"
-          cat current_state.yml
+          cat branches.yml
 
       - name: Compare with Desired State
         run: |
-          dyff between .github/repo/branch-settings.yml current_state.yml
+          dyff between .github/repo/branch-settings.yml branches.yml
