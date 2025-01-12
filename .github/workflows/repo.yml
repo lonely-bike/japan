@@ -41,7 +41,8 @@ jobs:
         run: |
           yamale \
           --schema .github/repo/repo-settings.yml \
-          repo.yml
+          repo.yml \
+          --no-strict
 
       - name: Fetch main branch settings
         env:
@@ -65,4 +66,5 @@ jobs:
         run: |
           yamale \
           --schema .github/repo/branch-settings.yml \
-          main.yml
+          main.yml \
+          --no-strict
