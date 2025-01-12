@@ -17,15 +17,9 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo snap install dyff
+          pip install yamale
 
-      # - name: Fetch Branch Protection Rules
-      #   run: |
-      #     curl -s \
-      #     -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-      #     -H "Accept: application/vnd.github+json" \
-      #     https://api.github.com/repos/${{ github.repository }}/branches/main/protection > current_state.json
-
-      - name: Fetch all branches
+      - name: Fetch repo settings
         env:
           PAGER:
           GH_TOKEN: ${{ github.token }}
@@ -34,15 +28,41 @@ jobs:
           --method GET \
           -H "Accept: application/vnd.github+json" \
           -H "X-GitHub-Api-Version: 2022-11-28" \
-          /repos/${{ github.repository }}/branches \
-            > branches.json
+          /repos/${{ github.repository }} \
+            > repo.json
 
-      - name: Convert JSON to YAML
+      - name: Convert repo JSON to YAML
         run: |
-          dyff yaml branches.json > branches.yml
+          dyff yaml repo.json > repo.yml
           echo "Converted JSON to YAML:"
-          cat branches.yml
+          cat repo.yml
 
-      - name: Compare with Desired State
+      - name: Validate repo.yml vs schema
         run: |
-          dyff between .github/repo/branch-settings.yml branches.yml
+          yamale \
+          --schema .github/repo/repo-settings.yml \
+          repo.yml
+
+      - name: Fetch main branch settings
+        env:
+          PAGER:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api \
+          --method GET \
+          -H "Accept: application/vnd.github+json" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          /repos/${{ github.repository }}/branches/main \
+            > main.json
+
+      - name: Convert main JSON to YAML
+        run: |
+          dyff yaml main.json > main.yml
+          echo "Converted JSON to YAML:"
+          cat main.yml
+
+      - name: Validate main.yml vs schema
+        run: |
+          yamale \
+          --schema .github/repo/branch-settings.yml \
+          main.yml
